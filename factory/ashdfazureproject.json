@@ -1,0 +1,9 @@
+{
+	"name": "ashdfazureproject",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2aeb57e8-9a79-4423-a0dc-9efc594aa5a2",
+		"tenantId": "5e3577d0-4d19-4f02-ba60-4ca9ca0cc008"
+	}
+}
