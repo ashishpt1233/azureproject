@@ -133,8 +133,6 @@
 			{
 				"name": "max_cdc",
 				"type": "Script",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "AzureSqlToLake",
