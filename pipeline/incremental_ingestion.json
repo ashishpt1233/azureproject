@@ -157,7 +157,10 @@
 					"scripts": [
 						{
 							"type": "Query",
-							"text": "select "
+							"text": {
+								"value": "@select MAX(@{pipeline().parameters.cdc_col}) as cdc from @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
+								"type": "Expression"
+							}
 						}
 					],
 					"scriptBlockExecutionTimeout": "02:00:00"
