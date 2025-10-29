@@ -189,7 +189,7 @@
 							{
 								"name": "cdc",
 								"value": {
-									"value": "select ",
+									"value": "@select max(pipeline().parameters.cdc_col) as cdc from @{pipeline().parameters.schema}.@(pipeline().parameters.table)",
 									"type": "Expression"
 								}
 							}
