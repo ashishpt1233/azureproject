@@ -192,7 +192,7 @@
 							{
 								"name": "cdc",
 								"value": {
-									"value": "@activity('AzureSqlToLake').output.resultSets[0].rows[0].cdc",
+									"value": "@activity('max_cdc').output.Resultsets[0].rows[0].cdc",
 									"type": "Expression"
 								}
 							}
