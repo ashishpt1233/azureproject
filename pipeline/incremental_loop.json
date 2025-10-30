@@ -224,7 +224,10 @@
 											"scripts": [
 												{
 													"type": "Query",
-													"text": "select MAX(@{item().cdc_col}) as cdc from @{item().schema}.@{item().table}\n"
+													"text": {
+														"value": "select MAX(@{item().cdc_col}) as cdc from @{item().schema}.@{item().table}\n",
+														"type": "Expression"
+													}
 												}
 											],
 											"scriptBlockExecutionTimeout": "02:00:00"
@@ -327,9 +330,7 @@
 						"activity": "ForEach1",
 						"dependencyConditions": [
 							"Failed",
-							"Skipped",
-							"Succeeded",
-							"Completed"
+							"Succeeded"
 						]
 					}
 				],
